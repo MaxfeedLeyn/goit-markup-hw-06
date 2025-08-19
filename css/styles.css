@@ -897,12 +897,31 @@ textarea {
         padding: 96px 0px;
     }
 
+    .header-logo{
+        padding: 16px 0;
+    }
+
     .header-nav-list{
         display: none;
     }
 
     .header-address{
         display: none;
+    }
+
+    .header-burger-btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+    }
+
+    .hero{
+        padding: 72px 0px;
+        background-image: linear-gradient(to bottom,
+                    rgba(46, 47, 66, 0.7),
+                    rgba(46, 47, 66, 0.7)),
+                url(../images/hero-banner@1x.jpg);
     }
 
     .hero-title{
@@ -961,6 +980,10 @@ textarea {
         display: none;
     }
 
+    .portfolio-item-visualization{
+
+    }
+
     .footer{
         padding: 96px 0px;
     }
@@ -1006,6 +1029,10 @@ textarea {
     }
 
     .footer-form-field{
+        width: 288px;
+    }
+
+    .backdrop-popup-wrapper{
         width: 288px;
     }
 }
