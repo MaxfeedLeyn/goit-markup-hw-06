@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
-  <body>
+  <body class="body">
     <header class="header">
       <div class="container header-block">
         <nav class="header-nav">
@@ -139,7 +139,11 @@
           <ul class="team-list">
             <li class="team-members">
               <img
-                src="./images/team/markguerrero.jpg"
+                srcset="
+                  ./images/team/markguerrero@1x.jpg 1x,
+                  ./images/team/markguerrero@2x.jpg 2x
+                "
+                src="./images/team/markguerrero@1x.jpg"
                 alt="Mark Guerrero"
                 width="264"
               />
@@ -180,7 +184,15 @@
               </div>
             </li>
             <li class="team-members">
-              <img src="./images/team/tomford.jpg" alt="Tom Ford" width="264" />
+              <img
+                srcset="
+                  ./images/team/tomford@1x.jpg 1x,
+                  ./images/team/tomford@2x.jpg 2x
+                "
+                src="./images/team/tomford@1x.jpg"
+                alt="Tom Ford"
+                width="264"
+              />
               <div class="team-member-description">
                 <h3 class="team-members-name">Tom Ford</h3>
                 <p class="team-members-position">Frontend Developer</p>
@@ -218,7 +230,11 @@
             </li>
             <li class="team-members">
               <img
-                src="./images/team/camilagarcia.jpg"
+                srcset="
+                  ./images/team/camilagarcia@1x.jpg 1x,
+                  ./images/team/camilagarcia@2x.jpg 2x
+                "
+                src="./images/team/camilagarcia@1x.jpg"
                 alt="Camila Garcia"
                 width="264"
               />
@@ -259,7 +275,11 @@
             </li>
             <li class="team-members">
               <img
-                src="./images/team/danielwilson.jpg"
+                srcset="
+                  ./images/team/danielwilson@1x.jpg 1x,
+                  ./images/team/danielwilson@2x.jpg 2x
+                "
+                src="./images/team/danielwilson@1x.jpg"
                 alt="Daniel Wilson"
                 width="264"
               />
@@ -311,21 +331,31 @@
               <div class="portfolio-item-visualization">
                 <picture>
                   <source
-                    media="(min-width: 320px)"
+                    media="(min-width: 320px) and (max-width: 767px)"
                     srcset="
-                      ./images/portfolio/compressed-288px/bankingapp_288x280.jpg 1x
+                      ./images/portfolio/compressed-288px/bankingapp_288x280@1x.jpg 1x,
+                      ./images/portfolio/compressed-288px/bankingapp_288x280@2x.jpg 2x
                     "
-                    width="288px"
+                    width="288"
                   />
                   <source
-                    media="(min-width: 786px)"
+                    media="(min-width: 768px) and (max-width: 1157px)"
                     srcset="
-                      ./images/portfolio/compressed-356px/bankingapp_356x300.jpg 1x
+                      ./images/portfolio/compressed-356px/bankingapp_356x300@1x.jpg 1x,
+                      ./images/portfolio/compressed-356px/bankingapp_356x300@2x.jpg 2x
                     "
-                    width="356px"
+                    width="356"
+                  />
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./images/portfolio/compressed-360px/bankingapp_360x300@1x.jpg 1x,
+                      ./images/portfolio/compressed-360px/bankingapp_360x300@2x.jpg 2x
+                    "
+                    width="360"
                   />
                   <img
-                    src="./images/portfolio/bankingapp_default.jpg"
+                    src="./images/portfolio/compressed-360px/bankingapp_360x300@1x.jpg"
                     alt="bankingapp"
                   />
                 </picture>
@@ -344,21 +374,31 @@
               <div class="portfolio-item-visualization">
                 <picture>
                   <source
-                    media="(min-width: 320px)"
+                    media="(min-width: 320px) and (max-width: 767px)"
                     srcset="
-                      ./images/portfolio/compressed-288px/cashlesspayment_288x280.jpg 1x
+                      ./images/portfolio/compressed-288px/cashlesspayment_288x280@1x.jpg 1x,
+                      ./images/portfolio/compressed-288px/cashlesspayment_288x280@2x.jpg 2x
                     "
-                    width="288px"
+                    width="288"
                   />
                   <source
-                    media="(min-width: 768px)"
+                    media="(min-width: 768px) and (max-width: 1157px)"
                     srcset="
-                      ./images/portfolio/compressed-356px/cashlesspayment_356x300.jpg 1x
+                      ./images/portfolio/compressed-356px/cashlesspayment_356x300@1x.jpg 1x,
+                      ./images/portfolio/compressed-356px/cashlesspayment_356x300@2x.jpg 2x
                     "
-                    width="356px"
+                    width="356"
+                  />
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./images/portfolio/compressed-360px/cashlesspayment_360x300@1x.jpg 1x,
+                      ./images/portfolio/compressed-360px/cashlesspayment_360x300@2x.jpg 2x
+                    "
+                    width="360"
                   />
                   <img
-                    src="./images/portfolio/cashlesspayment.jpg"
+                    src="/images/portfolio/compressed-360px/cashlesspayment_360x300@1x.jpg"
                     alt="cashlesspayment"
                   />
                 </picture>
@@ -377,21 +417,31 @@
               <div class="portfolio-item-visualization">
                 <picture>
                   <source
-                    media="(min-width: 320px)"
+                    media="(min-width: 320px) and (max-width: 767px)"
                     srcset="
-                      ./images/portfolio/compressed-288px/meditationmap_288x280.jpg 1x
+                      ./images/portfolio/compressed-288px/meditationmap_288x280@1x.jpg 1x,
+                      ./images/portfolio/compressed-288px/meditationmap_288x280@2x.jpg 2x
                     "
-                    width="288px"
+                    width="288"
                   />
                   <source
-                    media="(min-width: 768px)"
+                    media="(min-width: 768px) and (max-width: 1157px)"
                     srcset="
-                      ./images/portfolio/compressed-356px/meditationmap_356x300.jpg 1x
+                      ./images/portfolio/compressed-356px/meditationmap_356x300@1x.jpg 1x,
+                      ./images/portfolio/compressed-356px/meditationmap_356x300@2x.jpg 2x
                     "
-                    width="356px"
+                    width="356"
+                  />
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./images/portfolio/compressed-360px/meditationmap_360x300@1x.jpg 1x,
+                      ./images/portfolio/compressed-360px/meditationmap_360x300@2x.jpg 2x
+                    "
+                    width="360"
                   />
                   <img
-                    src="./images/portfolio/meditationmap.jpg"
+                    src="./images/portfolio/compressed-360px/meditationmap_360x300@1x.jpg"
                     alt="meditationmap"
                   />
                 </picture>
@@ -410,21 +460,31 @@
               <div class="portfolio-item-visualization">
                 <picture>
                   <source
-                    media="(min-width: 320px)"
+                    media="(min-width: 320px) and (max-width: 767px)"
                     srcset="
-                      ./images/portfolio/compressed-288px/taxiservice_288x280.jpg 1x
+                      ./images/portfolio/compressed-288px/taxiservice_288x280@1x.jpg 1x,
+                      ./images/portfolio/compressed-288px/taxiservice_288x280@2x.jpg 2x
                     "
-                    width="288px"
+                    width="288"
                   />
                   <source
-                    media="(min-width: 768px)"
+                    media="(min-width: 768px) and (max-width: 1157px)"
                     srcset="
-                      ./images/portfolio/compressed-356px/taxiservice_356x300.jpg 1x
+                      ./images/portfolio/compressed-356px/taxiservice_356x300@1x.jpg 1x,
+                      ./images/portfolio/compressed-356px/taxiservice_356x300@2x.jpg 2x
                     "
-                    width="356px"
+                    width="356"
+                  />
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./images/portfolio/compressed-360px/taxiservice_360x300@1x.jpg 1x,
+                      ./images/portfolio/compressed-360px/taxiservice_360x300@2x.jpg 2x
+                    "
+                    width="360"
                   />
                   <img
-                    src="./images/portfolio/taxiservice.jpg"
+                    src="./images/portfolio/compressed-360px/taxiservice_360x300@1x.jpg"
                     alt="taxiservice"
                     width="360"
                   />
@@ -444,21 +504,31 @@
               <div class="portfolio-item-visualization">
                 <picture>
                   <source
-                    media="(min-width: 320px)"
+                    media="(min-width: 320px) and (max-width: 767px)"
                     srcset="
-                      ./images/portfolio/compressed-288px/screemillustration_288x280.jpg 1x
+                      ./images/portfolio/compressed-288px/screemillustration_288x280@1x.jpg 1x,
+                      ./images/portfolio/compressed-288px/screemillustration_288x280@2x.jpg 2x
                     "
                     width="288px"
                   />
                   <source
-                    media="(min-width: 768px)"
+                    media="(min-width: 768px) and (max-width: 1157px)"
                     srcset="
-                      ./images/portfolio/compressed-356px/screemillustration_356x300.jpg 1x
+                      ./images/portfolio/compressed-356px/screemillustration_356x300@1x.jpg 1x,
+                      ./images/portfolio/compressed-356px/screemillustration_356x300@2x.jpg 2x
                     "
                     width="356px"
                   />
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./images/portfolio/compressed-360px/screemillustration_360x300@1x.jpg 1x,
+                      ./images/portfolio/compressed-360px/screemillustration_360x300@2x.jpg 2x
+                    "
+                    width="360"
+                  />
                   <img
-                    src="./images/portfolio/screemillustration.jpg"
+                    src="./images/portfolio/compressed-360px/screemillustration_360x300@1x.jpg"
                     alt="screemillustration"
                   />
                 </picture>
@@ -477,21 +547,31 @@
               <div class="portfolio-item-visualization">
                 <picture>
                   <source
-                    media="(min-width: 320px)"
+                    media="(min-width: 320px) and (max-width: 767px)"
                     srcset="
-                      ./images/portfolio/compressed-288px/onlinecourses_288x280.jpg 1x
+                      ./images/portfolio/compressed-288px/onlinecourses_288x280@1x.jpg 1x,
+                      ./images/portfolio/compressed-288px/onlinecourses_288x280@2x.jpg 2x
                     "
                     width="288px"
                   />
                   <source
-                    media="(min-width:768px)"
+                    media="(min-width: 768px) and (max-width: 1157px)"
                     srcset="
-                      ./images/portfolio/compressed-356px/onlinecourses_356x300.jpg 1x
+                      ./images/portfolio/compressed-356px/onlinecourses_356x300@1x.jpg 1x,
+                      ./images/portfolio/compressed-356px/onlinecourses_356x300@2x.jpg 2x
                     "
                     width="356px"
                   />
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./images/portfolio/compressed-360px/onlinecourses_360x300@1x.jpg 1x,
+                      ./images/portfolio/compressed-360px/onlinecourses_360x300@2x.jpg 2x
+                    "
+                    width="360"
+                  />
                   <img
-                    src="./images/portfolio/onlinecourses.jpg"
+                    src="./images/portfolio/compressed-360px/onlinecourses_360x300@1x.jpg"
                     alt="onlinecourses"
                   />
                 </picture>
@@ -525,7 +605,7 @@
 
         <div class="footer-social-media">
           <p class="footer-social-media-title">Social media</p>
-          <ul class="footer-socail-media-list">
+          <ul class="footer-social-media-list">
             <li class="footer-social-media-item">
               <a href="#" target="blank" class="link">
                 <svg class="icon" width="24" height="24">
@@ -557,7 +637,7 @@
           </ul>
         </div>
 
-        <div class="footer-subscribe">
+        <div class="footer-subscribe third">
           <p class="footer-subscribe-title">Subscribe</p>
           <form class="footer-form">
             <label class="footer-form-label">
@@ -580,7 +660,7 @@
     </footer>
 
     <!-- backdrop popup -->
-    <div class="backdrop-popup is-open">
+    <div class="backdrop-popup">
       <div class="backdrop-popup-wrapper">
         <button class="backdrop-popup-close-btn" type="button">
           <svg class="icon" width="8" height="8">
