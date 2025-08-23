@@ -675,6 +675,7 @@ textarea {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
 }
 
 .mobile-menu-links-list{
